@@ -25,9 +25,10 @@ public class Film {
     public Film() {
     }
 
-    public Film(String name, int year_of_production) {
+    public Film(String name, int year_of_production, Director owner) {
         this.name = name;
         this.year_of_production = year_of_production;
+        this.owner = owner;
     }
 
     public void setId(int id) {
@@ -64,10 +65,10 @@ public class Film {
 
     @Override
     public String toString() {
-        return "Film{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", year_of_production=" + year_of_production +
-                '}';
+        return "\nFilm {" +
+                "\n    id = " + id +
+                ",\n    name = \"" + name + '\"' +
+                ",\n    year_of_production = " + year_of_production +
+                "\n}";
     }
 }

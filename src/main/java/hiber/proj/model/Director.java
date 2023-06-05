@@ -64,10 +64,10 @@ public class Director {
 
     @Override
     public String toString() {
-        return "Director{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                '}';
+        return "\nDirector {" +
+                "\n    id = " + id +
+                ",\n    name = \"" + name + '\"' +
+                ",\n    age = " + age +
+                "\n}";
     }
 }
